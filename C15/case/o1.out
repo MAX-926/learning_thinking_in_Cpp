@@ -1,0 +1,59 @@
+#endif // OSTACK_H ///:~
+deleting string: #endif // OSTACK_H ///:~
+};
+deleting string: };
+       }
+deleting string:        }
+        else return 0;
+deleting string:         else return 0;
+        }
+deleting string:         }
+            return information;
+deleting string:             return information;
+            delete oldHead;
+deleting string:             delete oldHead;
+            Object* information = oldHead->data;
+deleting string:             Object* information = oldHead->data;
+            head = head->next;
+deleting string:             head = head->next;
+            Link* oldHead = head;
+deleting string:             Link* oldHead = head;
+Letting the destructor do the rest:
+deleting string:         {
+deleting string:         if(head)
+deleting string:        {
+deleting string:        Object* pop()
+deleting string:        Object* peek() const {return head ? head->data : 0;}
+deleting string:        }
+deleting string:             head = new Link(dat, head);
+deleting string:        {
+deleting string:        void push(Object* dat)
+deleting string:        }
+deleting string:         }
+deleting string:             delete pop();
+deleting string:         {
+deleting string:         while(head)
+deleting string:        {
+deleting string:        ~Stack()
+deleting string:        Stack():head(0){}
+deleting string:     public:
+deleting string:     } *head;
+deleting string:         Link(Object* dat, Link* nxt):data(dat), next(nxt){}
+deleting string:         Link* next;
+deleting string:         Object* data;
+deleting string:     {
+deleting string:     struct Link
+deleting string: {
+deleting string: class Stack
+deleting string: 
+deleting string: inline Object::~Object(){}
+deleting string: };
+deleting string:         virtual ~Object() = 0;
+deleting string:     public:
+deleting string: {
+deleting string: class Object
+deleting string: 
+deleting string: #define OSTACK_H
+deleting string: #ifndef OSTACK_H
+deleting string: // Using a single-rooted hierarchy
+deleting string: //:C15:OStack.h

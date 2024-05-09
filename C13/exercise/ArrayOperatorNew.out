@@ -1,0 +1,6 @@
+Widget::new: 40 bytes
+*Widget::new[]: 1048 bytes
+**************************~Widget::delete
+~~~~~~~~~~~~~~~~~~~~~~~~~~Widget::delete[]
+
+Widget::addr_w中的指针数目: 0

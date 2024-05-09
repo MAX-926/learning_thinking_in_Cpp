@@ -1,0 +1,167 @@
+}///:~
+deleting Myderived: }///:~
+deleting Myclass
+    out << "Letting the destructor do the rest\n";
+deleting Myderived:     out << "Letting the destructor do the rest\n";
+deleting Myclass
+    }
+deleting Myderived:     }
+deleting Myclass
+        delete s;
+deleting Myderived:         delete s;
+deleting Myclass
+        out << s->get_name() << endl;
+deleting Myderived:         out << s->get_name() << endl;
+deleting Myclass
+            break;
+deleting Myderived:             break;
+deleting Myclass
+        if((s = (Myderived*)textlines.pop()) == 0)
+deleting Myderived:         if((s = (Myderived*)textlines.pop()) == 0)
+deleting Myclass
+    {
+deleting Myderived:     {
+deleting Myclass
+    for(int i = 0; i < 10; i++)
+deleting Myderived:     for(int i = 0; i < 10; i++)
+deleting Myclass
+    Myderived* s;
+deleting Myderived:     Myderived* s;
+deleting Myclass
+Letting the destructor do the rest
+deleting Myderived:     }
+deleting Myclass
+deleting Myderived:         textlines.push(new Myderived(line));
+deleting Myclass
+deleting Myderived:     {
+deleting Myclass
+deleting Myderived:     while(getline(in, line))
+deleting Myclass
+deleting Myderived:     ifstream in("E:\\thinking in C++\\C15\\exercise\\15-26.cpp");
+deleting Myclass
+deleting Myderived:     string line;
+deleting Myclass
+deleting Myderived:     Stack textlines;
+deleting Myclass
+deleting Myderived: 
+deleting Myclass
+deleting Myderived:     //      << endl;
+deleting Myclass
+deleting Myderived:     // out << "Letting the destructor do the rest:"
+deleting Myclass
+deleting Myderived:     // }
+deleting Myclass
+deleting Myderived:     //     delete s;
+deleting Myclass
+deleting Myderived:     //     out << *s << endl;
+deleting Myclass
+deleting Myderived:     //     break;
+deleting Myclass
+deleting Myderived:     //     if((s = (MyString*)textlines.pop()) == 0)
+deleting Myclass
+deleting Myderived:     // {
+deleting Myclass
+deleting Myderived:     // for(int i = 0; i < 10; i++)
+deleting Myclass
+deleting Myderived:     // MyString* s;
+deleting Myclass
+deleting Myderived:     // // Pop some lines from the stack:
+deleting Myclass
+deleting Myderived:     // }
+deleting Myclass
+deleting Myderived:     //     textlines.push(new MyString(line));
+deleting Myclass
+deleting Myderived:     // {
+deleting Myclass
+deleting Myderived:     // while(getline(in, line))
+deleting Myclass
+deleting Myderived:     // string line;
+deleting Myclass
+deleting Myderived:     // Stack textlines;
+deleting Myclass
+deleting Myderived:     // assure(in, argv[1]);
+deleting Myclass
+deleting Myderived:     // ifstream in(argv[1]);
+deleting Myclass
+deleting Myderived:     // requireArgs(argc, 1);// File name is argument
+deleting Myclass
+deleting Myderived: {
+deleting Myclass
+deleting Myderived: int main(int argc, char* argv[])
+deleting Myclass
+deleting Myderived: 
+deleting Myclass
+deleting Myderived: };
+deleting Myclass
+deleting Myderived:         ~MyString(){out << "deleting string: " << *this << endl;}
+deleting Myclass
+deleting Myderived:         MyString(string s):string(s){}
+deleting Myclass
+deleting Myderived:     public:
+deleting Myclass
+deleting Myderived: {
+deleting Myclass
+deleting Myderived: class MyString:public string, public Object
+deleting Myclass
+deleting Myderived: // both a string and an Object:
+deleting Myclass
+deleting Myderived: // Use multiple inheritance, we want
+deleting Myclass
+deleting Myderived: 
+deleting Myclass
+deleting Myderived: 
+deleting Myclass
+deleting Myderived: };
+deleting Myclass
+deleting Myderived:         string get_name(){return Myclass::get_name();}
+deleting Myclass
+deleting Myderived:         Myderived(string mname):Myclass(mname), Object(){}
+deleting Myclass
+deleting Myderived:         ~Myderived(){out << "deleting Myderived: " << this->get_name() << endl;}
+deleting Myclass
+deleting Myderived:     public:
+deleting Myclass
+deleting Myderived: {
+deleting Myclass
+deleting Myderived: class Myderived:public Myclass, public Object
+deleting Myclass
+deleting Myderived: 
+deleting Myclass
+deleting Myderived: };
+deleting Myclass
+deleting Myderived:         string get_name(){return name;}
+deleting Myclass
+deleting Myderived:         Myclass(string mname):name(mname){}
+deleting Myclass
+deleting Myderived:         virtual ~Myclass(){out << "deleting Myclass\n";}
+deleting Myclass
+deleting Myderived:     public:
+deleting Myclass
+deleting Myderived:         string name;
+deleting Myclass
+deleting Myderived: {
+deleting Myclass
+deleting Myderived: class Myclass
+deleting Myclass
+deleting Myderived: 
+deleting Myclass
+deleting Myderived: ofstream out("o1.out");
+deleting Myclass
+deleting Myderived: 
+deleting Myclass
+deleting Myderived: using namespace std;
+deleting Myclass
+deleting Myderived: #include <string>
+deleting Myclass
+deleting Myderived: #include <iostream>
+deleting Myclass
+deleting Myderived: #include <fstream>
+deleting Myclass
+deleting Myderived: #include"../../Require.h"
+deleting Myclass
+deleting Myderived: #include "../case/OStack.h"
+deleting Myclass
+deleting Myderived: // {T} OStackTest.cpp
+deleting Myclass
+deleting Myderived: //:C15:OStackTest.cpp
+deleting Myclass

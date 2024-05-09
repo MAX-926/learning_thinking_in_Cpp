@@ -1,0 +1,67 @@
+intStash[0] = 0
+intStash[1] = 1
+intStash[2] = 2
+intStash[3] = 3
+intStash[4] = 4
+intStash[5] = 5
+intStash[6] = 6
+intStash[7] = 7
+intStash[8] = 8
+intStash[9] = 9
+intStash[10] = 10
+intStash[11] = 11
+intStash[12] = 12
+intStash[13] = 13
+intStash[14] = 14
+intStash[15] = 15
+intStash[16] = 16
+intStash[17] = 17
+intStash[18] = 18
+intStash[19] = 19
+intStash[20] = 20
+intStash[21] = 21
+intStash[22] = 22
+intStash[23] = 23
+intStash[24] = 24
+stringStash[0] = //:C:13:PStashTest.cpp
+stringStash[1] = // {L} PStash
+stringStash[2] = // Test of pointer Stash
+stringStash[3] = #include "PStash.h"
+stringStash[4] = #include "../../Require.h"
+stringStash[5] = #include<iostream>
+stringStash[6] = #include<fstream>
+stringStash[7] = #include<string>
+stringStash[8] = using namespace std;
+stringStash[9] = 
+stringStash[10] = int main()
+stringStash[11] = {
+stringStash[12] =     PStash intStash;
+stringStash[13] =     // 'new' works with built-in type, too. Note
+stringStash[14] =     // the "pseudo-constructor"syntax:
+stringStash[15] =     for(int i = 0; i < 25; i++)
+stringStash[16] =         intStash.add(new int(i));
+stringStash[17] =     for(int j = 0; j < intStash.count(); j++)
+stringStash[18] =         cout << "intStash[" << j << "] = "
+stringStash[19] =              << *(int*)intStash[j] << endl;
+stringStash[20] =     // Clean up:
+stringStash[21] =     for(int k = 0; k < intStash.count(); k++)
+stringStash[22] =     {
+stringStash[23] =         delete (int*)intStash.remove(k);
+stringStash[24] =     }
+stringStash[25] = 
+stringStash[26] =     ifstream in ("PStashTest.cpp");
+stringStash[27] =     assure(in, "PStashTest.cpp");
+stringStash[28] =     PStash stringStash;
+stringStash[29] =     string line;
+stringStash[30] =     while(getline(in, line))
+stringStash[31] =         stringStash.add(new string(line));
+stringStash[32] =     // Print out the strings:
+stringStash[33] =     for(int u = 0; stringStash[u]; u++)
+stringStash[34] =         cout << "stringStash[" << u << "] = "
+stringStash[35] =              << *(string*)stringStash[u] << endl;
+stringStash[36] =     // Clean up:
+stringStash[37] =     for(int v = 0; v < stringStash.count(); v++)
+stringStash[38] =     {
+stringStash[39] =         delete (string*)stringStash.remove(v);
+stringStash[40] =     }
+stringStash[41] = }///:~
